@@ -1,0 +1,24 @@
+.details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    margin: 0 auto; 
+}
+
+.detail--column {
+    
+    border: 1px dotted goldenrod;
+}
+.detail--column h2 {
+    padding-left: 20px; /* Adjust this value as needed */
+}
+
+.assignments {
+    padding: 1rem 5rem;
+}
+
+@media (max-width: 768px) {
+    .details {
+      grid-template-columns: 1fr; /* Stack them vertically on smaller screens */
+    }
+  }
